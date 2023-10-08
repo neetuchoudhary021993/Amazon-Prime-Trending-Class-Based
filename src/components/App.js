@@ -17,7 +17,11 @@ class App extends Component {
     const { index, slides } = this.state;
 
     return (
-      <></>
+      <>
+      <button id="button-restart"></button>
+      <button id="button-prev"></button>
+      <button id="button-next"></button>
+      </>
     );
   }
 }
