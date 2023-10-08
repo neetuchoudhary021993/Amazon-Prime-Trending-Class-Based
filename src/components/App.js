@@ -36,25 +36,25 @@ class App extends Component {
 
     return (
       <div>
-        <h1 id="title">{currentSlide.title}</h1>
-        <p id="text">{currentSlide.text}</p>
+        <h1 data-testid="title">{currentSlide.title}</h1>
+        <p data-testid="text">{currentSlide.text}</p>
 
         <button
-          id="button-restart"
+          data-testid="button-restart"
           onClick={this.handleRestart}
           disabled={index === 0}
         >
           Restart
         </button>
         <button
-          id="button-prev"
+          data-testid="button-prev"
           onClick={this.handlePrev}
           disabled={index === 0}
         >
           Prev
         </button>
         <button
-          id="button-next"
+          data-testid="button-next"
           onClick={this.handleNext}
           disabled={index === slides.length - 1}
         >
